@@ -9,35 +9,35 @@ namespace FCCAnalyses{
 
 namespace ReconstructedParticle{
 
-/// sel_type
-sel_type::sel_type(const int type) : m_type(type) {}
+/// sel_pdg
+sel_pdg::sel_pdg(const int pdg) : m_pdg(pdg) {}
 
-ROOT::VecOps::RVec<edm4hep::ReconstructedParticleData> sel_type::operator()(
+ROOT::VecOps::RVec<edm4hep::ReconstructedParticleData> sel_pdg::operator()(
     ROOT::VecOps::RVec<edm4hep::ReconstructedParticleData> in) {
   ROOT::VecOps::RVec<edm4hep::ReconstructedParticleData> result;
   result.reserve(in.size());
   for (size_t i = 0; i < in.size(); ++i) {
-    if (in[i].type == m_type) {
+    if (in[i].PDG == m_pdg) {
       result.emplace_back(in[i]);
     }
   }
   return result;
 }
 
-/// sel_absType
-sel_absType::sel_absType(const int type) : m_type(type) {
-  if (m_type < 0) {
+/// sel_absPdg
+sel_absPdg::sel_absPdg(const int pdg) : m_pdg(pdg) {
+  if (m_pdg < 0) {
     throw std::invalid_argument(
-        "ReconstructedParticle::sel_absType: Received negative value!");
+        "ReconstructedParticle::sel_absPdg: Received negative value!");
   }
 }
 
-ROOT::VecOps::RVec<edm4hep::ReconstructedParticleData> sel_absType::operator()(
+ROOT::VecOps::RVec<edm4hep::ReconstructedParticleData> sel_absPdg::operator()(
     ROOT::VecOps::RVec<edm4hep::ReconstructedParticleData> in) {
   ROOT::VecOps::RVec<edm4hep::ReconstructedParticleData> result;
   result.reserve(in.size());
   for (size_t i = 0; i < in.size(); ++i) {
-    if (std::abs(in[i].type) == m_type) {
+    if (std::abs(in[i].PDG) == m_pdg) {
       result.emplace_back(in[i]);
     }
   }

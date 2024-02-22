@@ -35,20 +35,18 @@ namespace ReconstructedParticle{
     float operator() (ROOT::VecOps::RVec<edm4hep::ReconstructedParticleData> in) ;
   };
 
-  /// select ReconstructedParticles by type
-  /// Note: type might not correspond to PDG ID
-  struct sel_type {
-    sel_type(const int type);
-    const int m_type;
+  /// select ReconstructedParticles by PDG
+  struct sel_pdg {
+    sel_pdg(const int pdg);
+    const int m_pdg;
     ROOT::VecOps::RVec<edm4hep::ReconstructedParticleData>
     operator()(ROOT::VecOps::RVec<edm4hep::ReconstructedParticleData> in);
   };
 
-  /// select ReconstructedParticles by type absolute value
-  /// Note: type might not correspond to PDG ID
-  struct sel_absType {
-    sel_absType(const int type);
-    const int m_type;
+  /// select ReconstructedParticles by absolute value of PDG
+  struct sel_absPdg {
+    sel_absPdg(const int pdg);
+    const int m_pdg;
     ROOT::VecOps::RVec<edm4hep::ReconstructedParticleData>
     operator()(ROOT::VecOps::RVec<edm4hep::ReconstructedParticleData> in);
   };
