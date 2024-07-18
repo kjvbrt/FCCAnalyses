@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1721311694277,
+  "lastUpdate": 1721311695564,
   "repoUrl": "https://github.com/kjvbrt/FCCAnalyses",
   "entries": {
     "Benchmark": [
@@ -2123,6 +2123,55 @@ window.BENCHMARK_DATA = {
             "unit": "Seconds",
             "range": 10,
             "extra": "Analysis path: examples/FCCee/vertex_lcfiplus/analysis_V0.py"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "34742917+kjvbrt@users.noreply.github.com",
+            "name": "Juraj Smiesko",
+            "username": "kjvbrt"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "3c917d97117f6a5e86b010f7613c463c41c9f1f9",
+          "message": "Turn off ACTS dependent analyzers in the CI (#389)\n\n* Turn off ACTS dependent analyzers in the CI\r\n\r\n* Removing CentOs 7\r\n\r\n* Commenting out minimize_sphericity test\r\n\r\n* Using simpler elements in the OS matrix",
+          "timestamp": "2024-07-18T13:34:28+02:00",
+          "tree_id": "87b104c207e0e7590965fc77d62c5c43187ea850",
+          "url": "https://github.com/kjvbrt/FCCAnalyses/commit/3c917d97117f6a5e86b010f7613c463c41c9f1f9"
+        },
+        "date": 1721311695220,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "prod | Events processed per second: case-studies/analysis_example/scripts/analysis_example.py",
+            "value": 8.299228298942577,
+            "unit": "Evt/s"
+          },
+          {
+            "name": "prod | Events processed per second: examples/FCCee/higgs/mH-recoil/mumu/analysis_stage1.py",
+            "value": 8.503804446786212,
+            "unit": "Evt/s"
+          },
+          {
+            "name": "prod | Events processed per second: examples/FCCee/flavour/Bc2TauNu/analysis_B2TauNu_truth.py",
+            "value": 6.893611103043947,
+            "unit": "Evt/s"
+          },
+          {
+            "name": "prod | Events processed per second: examples/FCCee/test/jet_constituents.py",
+            "value": 9.007955957079965,
+            "unit": "Evt/s"
+          },
+          {
+            "name": "prod | Events processed per second: examples/FCCee/vertex_lcfiplus/analysis_V0.py",
+            "value": 3.120140546415738,
+            "unit": "Evt/s"
           }
         ]
       }
