@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1722849841397,
+  "lastUpdate": 1722849842617,
   "repoUrl": "https://github.com/kjvbrt/FCCAnalyses",
   "entries": {
     "Benchmark": [
@@ -2987,6 +2987,55 @@ window.BENCHMARK_DATA = {
             "unit": "Seconds",
             "range": 10,
             "extra": "Analysis path: examples/FCCee/vertex_lcfiplus/analysis_V0.py"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "22276694+jmcarcell@users.noreply.github.com",
+            "name": "Juan Miguel Carceller",
+            "username": "jmcarcell"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "dae0778e138b87f5f8400c98a931d85608c24385",
+          "message": "Add checks for TVMA::Experimental::RBDT since it is not a template anymore (#395)\n\n* Add checks for TVMA::Experimental::RBDT since it is not a template anymore\r\n\r\nafter ROOT 6.32.0, failing with a compilation error.\r\n\r\n* Close #ifndef\r\n\r\n* Fix format\r\n\r\n---------\r\n\r\nCo-authored-by: jmcarcell <jmcarcell@users.noreply.github.com>",
+          "timestamp": "2024-07-30T16:03:05+02:00",
+          "tree_id": "e18c19f318b9f8ae14ded7107c6d736f2e0c0c68",
+          "url": "https://github.com/kjvbrt/FCCAnalyses/commit/dae0778e138b87f5f8400c98a931d85608c24385"
+        },
+        "date": 1722849842293,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "prod | Events processed per second: case-studies/analysis_example/scripts/analysis_example.py",
+            "value": 8.850631871166085,
+            "unit": "Evt/s"
+          },
+          {
+            "name": "prod | Events processed per second: examples/FCCee/higgs/mH-recoil/mumu/analysis_stage1.py",
+            "value": 8.86237852591294,
+            "unit": "Evt/s"
+          },
+          {
+            "name": "prod | Events processed per second: examples/FCCee/flavour/Bc2TauNu/analysis_B2TauNu_truth.py",
+            "value": 7.181074183440582,
+            "unit": "Evt/s"
+          },
+          {
+            "name": "prod | Events processed per second: examples/FCCee/test/jet_constituents.py",
+            "value": 9.299578737888089,
+            "unit": "Evt/s"
+          },
+          {
+            "name": "prod | Events processed per second: examples/FCCee/vertex_lcfiplus/analysis_V0.py",
+            "value": 3.2231975944731315,
+            "unit": "Evt/s"
           }
         ]
       }
