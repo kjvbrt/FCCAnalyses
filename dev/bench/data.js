@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1730292982878,
+  "lastUpdate": 1732177423043,
   "repoUrl": "https://github.com/kjvbrt/FCCAnalyses",
   "entries": {
     "Benchmark": [
@@ -4932,6 +4932,79 @@ window.BENCHMARK_DATA = {
             "name": "nightly | Events processed per second: examples/data_source/analysis_stage1.py",
             "value": 5.438652946677198,
             "unit": "Evt/s"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "34742917+kjvbrt@users.noreply.github.com",
+            "name": "Juraj Smiesko",
+            "username": "kjvbrt"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "b9b84221837da8868158f5592b48a9af69f0f6e3",
+          "message": "Extract search for input files into separate function (#418)\n\n* Extract search for input files into separate function\r\n\r\n* Add few printouts\r\n\r\n* Using join to merge path",
+          "timestamp": "2024-11-12T10:16:04+01:00",
+          "tree_id": "dbd905e103d8c5b1c61877067fbca5955b8f000a",
+          "url": "https://github.com/kjvbrt/FCCAnalyses/commit/b9b84221837da8868158f5592b48a9af69f0f6e3"
+        },
+        "date": 1732177421299,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "nightly | Time spent running the analysis: case-studies/analysis_example/scripts/analysis_example.py",
+            "value": 11.434865951538086,
+            "unit": "Seconds",
+            "range": 10,
+            "extra": "Analysis path: case-studies/analysis_example/scripts/analysis_example.py"
+          },
+          {
+            "name": "nightly | Time spent running the analysis: examples/FCCee/higgs/mH-recoil/mumu/analysis_stage1.py",
+            "value": 8.635240077972412,
+            "unit": "Seconds",
+            "range": 10,
+            "extra": "Analysis path: examples/FCCee/higgs/mH-recoil/mumu/analysis_stage1.py"
+          },
+          {
+            "name": "nightly | Time spent running the analysis: examples/FCCee/flavour/Bc2TauNu/analysis_B2TauNu_truth.py",
+            "value": 13.196257829666138,
+            "unit": "Seconds",
+            "range": 10,
+            "extra": "Analysis path: examples/FCCee/flavour/Bc2TauNu/analysis_B2TauNu_truth.py"
+          },
+          {
+            "name": "nightly | Time spent running the analysis: examples/FCCee/test/jet_constituents.py",
+            "value": 10.890918254852295,
+            "unit": "Seconds",
+            "range": 10,
+            "extra": "Analysis path: examples/FCCee/test/jet_constituents.py"
+          },
+          {
+            "name": "nightly | Time spent running the analysis: examples/FCCee/vertex_lcfiplus/analysis_V0.py",
+            "value": 34.13273310661316,
+            "unit": "Seconds",
+            "range": 10,
+            "extra": "Analysis path: examples/FCCee/vertex_lcfiplus/analysis_V0.py"
+          },
+          {
+            "name": "nightly | Time spent running the analysis: examples/data_source/stages_source.py",
+            "value": 13.567106008529663,
+            "unit": "Seconds",
+            "range": 10,
+            "extra": "Analysis path: examples/data_source/stages_source.py"
+          },
+          {
+            "name": "nightly | Time spent running the analysis: examples/data_source/analysis_stage1.py",
+            "value": 14.068113327026367,
+            "unit": "Seconds",
+            "range": 10,
+            "extra": "Analysis path: examples/data_source/analysis_stage1.py"
           }
         ]
       }
