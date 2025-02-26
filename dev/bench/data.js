@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1740584921745,
+  "lastUpdate": 1740584923499,
   "repoUrl": "https://github.com/kjvbrt/FCCAnalyses",
   "entries": {
     "Benchmark": [
@@ -5929,6 +5929,65 @@ window.BENCHMARK_DATA = {
             "unit": "Seconds",
             "range": 10,
             "extra": "Analysis path: examples/data_source/analysis_stage1.py"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "34742917+kjvbrt@users.noreply.github.com",
+            "name": "Juraj Smiesko",
+            "username": "kjvbrt"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "fe298f77542e7f925bef2e0008bc1ec91f96871a",
+          "message": "PodioSource: Adding remove, merge and createPseudoJets analyzers (#427)\n\n* PodioSource: Adding remove, merge and createPseudoJets analyzers\n\n* Fixing formatting\n\n* Using for loop instead of std::find\n\n* Explicitelly turning on WITH_PODIO_DATASOURCE\n\n* Adding EDM4HEP::edm4hep\n\n* Building FCCAnalyses as shared library\n\n* Formatting",
+          "timestamp": "2025-02-26T15:42:14+01:00",
+          "tree_id": "2408bf02fe28159b41c1ab1d7ba8808425d6e1e7",
+          "url": "https://github.com/kjvbrt/FCCAnalyses/commit/fe298f77542e7f925bef2e0008bc1ec91f96871a"
+        },
+        "date": 1740584922764,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "nightly | Events processed per second: case-studies/analysis_example/scripts/analysis_example.py",
+            "value": 7.276585756978714,
+            "unit": "Evt/s"
+          },
+          {
+            "name": "nightly | Events processed per second: examples/FCCee/higgs/mH-recoil/mumu/analysis_stage1.py",
+            "value": 10.02708790962371,
+            "unit": "Evt/s"
+          },
+          {
+            "name": "nightly | Events processed per second: examples/FCCee/flavour/Bc2TauNu/analysis_B2TauNu_truth.py",
+            "value": 6.7521873150889595,
+            "unit": "Evt/s"
+          },
+          {
+            "name": "nightly | Events processed per second: examples/FCCee/test/jet_constituents.py",
+            "value": 7.681853087643939,
+            "unit": "Evt/s"
+          },
+          {
+            "name": "nightly | Events processed per second: examples/FCCee/vertex_lcfiplus/analysis_V0.py",
+            "value": 2.794787237354351,
+            "unit": "Evt/s"
+          },
+          {
+            "name": "nightly | Events processed per second: examples/data_source/stages_source.py",
+            "value": 5.649088437356123,
+            "unit": "Evt/s"
+          },
+          {
+            "name": "nightly | Events processed per second: examples/data_source/analysis_stage1.py",
+            "value": 5.376214487463362,
+            "unit": "Evt/s"
           }
         ]
       }
