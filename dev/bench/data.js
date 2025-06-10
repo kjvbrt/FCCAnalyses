@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1749571412512,
+  "lastUpdate": 1749571413941,
   "repoUrl": "https://github.com/kjvbrt/FCCAnalyses",
   "entries": {
     "Benchmark": [
@@ -1789,6 +1789,65 @@ window.BENCHMARK_DATA = {
             "unit": "Seconds",
             "range": 10,
             "extra": "Analysis path: examples/data_source/analysis_stage1.py"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "34742917+kjvbrt@users.noreply.github.com",
+            "name": "Juraj Smiesko",
+            "username": "kjvbrt"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "12b8698967b66b7d4a2d2547cf682115f20478ce",
+          "message": "Test file path can be a template (#447)\n\n* Using newer test file\n\n* Test file path can be a template\n\n* Using domain to check for nightlies/release\n\n* Using domain to check for nightlies/release in histmaker too\n\n* Adding the k4h os/type string to standalone tests\n\n* Adding info to the man page",
+          "timestamp": "2025-06-10T17:43:17+02:00",
+          "tree_id": "d3c79d244ee598914309b68cc10a5032a4e71614",
+          "url": "https://github.com/kjvbrt/FCCAnalyses/commit/12b8698967b66b7d4a2d2547cf682115f20478ce"
+        },
+        "date": 1749571413515,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "prod | Events processed per second: case-studies/analysis_example/scripts/analysis_example.py",
+            "value": 8.84811671444423,
+            "unit": "Evt/s"
+          },
+          {
+            "name": "prod | Events processed per second: examples/FCCee/higgs/mH-recoil/mumu/analysis_stage1.py",
+            "value": 10.450768215323045,
+            "unit": "Evt/s"
+          },
+          {
+            "name": "prod | Events processed per second: examples/FCCee/flavour/Bc2TauNu/analysis_B2TauNu_truth.py",
+            "value": 7.018961654195469,
+            "unit": "Evt/s"
+          },
+          {
+            "name": "prod | Events processed per second: examples/FCCee/test/jet_constituents.py",
+            "value": 11.03186489180666,
+            "unit": "Evt/s"
+          },
+          {
+            "name": "prod | Events processed per second: examples/FCCee/vertex_lcfiplus/analysis_V0.py",
+            "value": 2.9366648130051076,
+            "unit": "Evt/s"
+          },
+          {
+            "name": "prod | Events processed per second: examples/data_source/stages_source.py",
+            "value": 6.641357128992013,
+            "unit": "Evt/s"
+          },
+          {
+            "name": "prod | Events processed per second: examples/data_source/analysis_stage1.py",
+            "value": 6.189332630529526,
+            "unit": "Evt/s"
           }
         ]
       }
