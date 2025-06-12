@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1749727247687,
+  "lastUpdate": 1749736447198,
   "repoUrl": "https://github.com/kjvbrt/FCCAnalyses",
   "entries": {
     "Benchmark": [
@@ -2508,6 +2508,79 @@ window.BENCHMARK_DATA = {
             "name": "prod | Events processed per second: examples/data_source/analysis_stage1.py",
             "value": 5.250574322877102,
             "unit": "Evt/s"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "34742917+kjvbrt@users.noreply.github.com",
+            "name": "Juraj Smiesko",
+            "username": "kjvbrt"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "d580c881c441da4fb57537d534ccbbf5da9d7122",
+          "message": "Removing ACTS_VERSION_MAJOR and other ACTS adjustments (#450)\n\n* Removing ACTS_VERSION_MAJOR and other ACTS adjustments\n\n* Formatting\n\n* More formatting",
+          "timestamp": "2025-06-12T13:28:03Z",
+          "tree_id": "ee422dabc6670013e56cd6b1f3531bb291a0cfb2",
+          "url": "https://github.com/kjvbrt/FCCAnalyses/commit/d580c881c441da4fb57537d534ccbbf5da9d7122"
+        },
+        "date": 1749736446295,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "prod | Time spent running the analysis: case-studies/analysis_example/scripts/analysis_example.py",
+            "value": 12.221251010894775,
+            "unit": "Seconds",
+            "range": 10,
+            "extra": "Analysis path: case-studies/analysis_example/scripts/analysis_example.py"
+          },
+          {
+            "name": "prod | Time spent running the analysis: examples/FCCee/higgs/mH-recoil/mumu/analysis_stage1.py",
+            "value": 27.832026958465576,
+            "unit": "Seconds",
+            "range": 10,
+            "extra": "Analysis path: examples/FCCee/higgs/mH-recoil/mumu/analysis_stage1.py"
+          },
+          {
+            "name": "prod | Time spent running the analysis: examples/FCCee/flavour/Bc2TauNu/analysis_B2TauNu_truth.py",
+            "value": 13.783695936203003,
+            "unit": "Seconds",
+            "range": 10,
+            "extra": "Analysis path: examples/FCCee/flavour/Bc2TauNu/analysis_B2TauNu_truth.py"
+          },
+          {
+            "name": "prod | Time spent running the analysis: examples/FCCee/test/jet_constituents.py",
+            "value": 9.27113389968872,
+            "unit": "Seconds",
+            "range": 10,
+            "extra": "Analysis path: examples/FCCee/test/jet_constituents.py"
+          },
+          {
+            "name": "prod | Time spent running the analysis: examples/FCCee/vertex_lcfiplus/analysis_V0.py",
+            "value": 35.99937319755554,
+            "unit": "Seconds",
+            "range": 10,
+            "extra": "Analysis path: examples/FCCee/vertex_lcfiplus/analysis_V0.py"
+          },
+          {
+            "name": "prod | Time spent running the analysis: examples/data_source/stages_source.py",
+            "value": 46.20254921913147,
+            "unit": "Seconds",
+            "range": 10,
+            "extra": "Analysis path: examples/data_source/stages_source.py"
+          },
+          {
+            "name": "prod | Time spent running the analysis: examples/data_source/analysis_stage1.py",
+            "value": 42.53668570518494,
+            "unit": "Seconds",
+            "range": 10,
+            "extra": "Analysis path: examples/data_source/analysis_stage1.py"
           }
         ]
       }
