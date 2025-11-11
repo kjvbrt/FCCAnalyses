@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1762854457637,
+  "lastUpdate": 1762854459364,
   "repoUrl": "https://github.com/kjvbrt/FCCAnalyses",
   "entries": {
     "Benchmark": [
@@ -4693,6 +4693,65 @@ window.BENCHMARK_DATA = {
             "range": "10",
             "unit": "Seconds",
             "extra": "Analysis path: examples/data_source/analysis_stage1.py"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "56884503+ShreyasBakare@users.noreply.github.com",
+            "name": "Shreyas Bakare",
+            "username": "ShreyasBakare"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "7664194aaaf8096ca4697fadeaed3476871ed593",
+          "message": "Changed Quantity to RecDqdxData (#480)\n\nCo-authored-by: Shreyas Bakare <sbakare@lxplus960.cern.ch>",
+          "timestamp": "2025-11-11T10:09:15+01:00",
+          "tree_id": "f5bd30b644ae7a788f4dc364776d9da32843121b",
+          "url": "https://github.com/kjvbrt/FCCAnalyses/commit/7664194aaaf8096ca4697fadeaed3476871ed593"
+        },
+        "date": 1762854458706,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "nightly | Events processed per second: case-studies/analysis_example/scripts/analysis_example.py",
+            "value": 8.83586890416897,
+            "unit": "Evt/s"
+          },
+          {
+            "name": "nightly | Events processed per second: examples/FCCee/higgs/mH-recoil/mumu/analysis_stage1.py",
+            "value": 8.005209536441305,
+            "unit": "Evt/s"
+          },
+          {
+            "name": "nightly | Events processed per second: examples/FCCee/flavour/Bc2TauNu/analysis_B2TauNu_truth.py",
+            "value": 0.7099030492340475,
+            "unit": "Evt/s"
+          },
+          {
+            "name": "nightly | Events processed per second: examples/FCCee/test/jet_constituents.py",
+            "value": 9.060891735376329,
+            "unit": "Evt/s"
+          },
+          {
+            "name": "nightly | Events processed per second: examples/FCCee/vertex_lcfiplus/analysis_V0.py",
+            "value": 0.3452775385756667,
+            "unit": "Evt/s"
+          },
+          {
+            "name": "nightly | Events processed per second: examples/data_source/stages_source.py",
+            "value": 4.5816274543902225,
+            "unit": "Evt/s"
+          },
+          {
+            "name": "nightly | Events processed per second: examples/data_source/analysis_stage1.py",
+            "value": 4.2963857824808835,
+            "unit": "Evt/s"
           }
         ]
       }
