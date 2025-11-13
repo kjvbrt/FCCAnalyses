@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1763027589348,
+  "lastUpdate": 1763027658358,
   "repoUrl": "https://github.com/kjvbrt/FCCAnalyses",
   "entries": {
     "Benchmark": [
@@ -5160,6 +5160,86 @@ window.BENCHMARK_DATA = {
             "name": "nightly | Events processed per second: examples/data_source/analysis_stage1.py",
             "value": 5.92209047914344,
             "unit": "Evt/s"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "34742917+kjvbrt@users.noreply.github.com",
+            "name": "Juraj Smiesko",
+            "username": "kjvbrt"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "bd00908d6f8f2ebf75bbec04e78c2960cc937fe3",
+          "message": "Making veawer example run on EDM4hep 1.0 files (#460)\n\n* Making weaver example run on EDM4hep 1.0 files\n\n* Adjusting include headers",
+          "timestamp": "2025-11-12T17:32:12+01:00",
+          "tree_id": "8f4550b07ed1a6f27aff47328a44e2b12282d301",
+          "url": "https://github.com/kjvbrt/FCCAnalyses/commit/bd00908d6f8f2ebf75bbec04e78c2960cc937fe3"
+        },
+        "date": 1763027657557,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "prod | Time spent running the analysis: case-studies/analysis_example/scripts/analysis_example.py",
+            "value": 10.497374296188354,
+            "range": "10",
+            "unit": "Seconds",
+            "extra": "Analysis path: case-studies/analysis_example/scripts/analysis_example.py"
+          },
+          {
+            "name": "prod | Time spent running the analysis: examples/FCCee/higgs/mH-recoil/mumu/analysis_stage1.py",
+            "value": 9.032716512680054,
+            "range": "10",
+            "unit": "Seconds",
+            "extra": "Analysis path: examples/FCCee/higgs/mH-recoil/mumu/analysis_stage1.py"
+          },
+          {
+            "name": "prod | Time spent running the analysis: examples/FCCee/flavour/Bc2TauNu/analysis_B2TauNu_truth.py",
+            "value": 13.291831970214844,
+            "range": "10",
+            "unit": "Seconds",
+            "extra": "Analysis path: examples/FCCee/flavour/Bc2TauNu/analysis_B2TauNu_truth.py"
+          },
+          {
+            "name": "prod | Time spent running the analysis: examples/FCCee/test/jet_constituents.py",
+            "value": 8.708102941513062,
+            "range": "10",
+            "unit": "Seconds",
+            "extra": "Analysis path: examples/FCCee/test/jet_constituents.py"
+          },
+          {
+            "name": "prod | Time spent running the analysis: examples/FCCee/vertex_lcfiplus/analysis_V0.py",
+            "value": 34.09212112426758,
+            "range": "10",
+            "unit": "Seconds",
+            "extra": "Analysis path: examples/FCCee/vertex_lcfiplus/analysis_V0.py"
+          },
+          {
+            "name": "prod | Time spent running the analysis: examples/FCCee/weaver/stage1.py",
+            "value": 30.25828766822815,
+            "range": "10",
+            "unit": "Seconds",
+            "extra": "Analysis path: examples/FCCee/weaver/stage1.py"
+          },
+          {
+            "name": "prod | Time spent running the analysis: examples/data_source/stages_source.py",
+            "value": 19.225510120391846,
+            "range": "10",
+            "unit": "Seconds",
+            "extra": "Analysis path: examples/data_source/stages_source.py"
+          },
+          {
+            "name": "prod | Time spent running the analysis: examples/data_source/analysis_stage1.py",
+            "value": 15.802345752716064,
+            "range": "10",
+            "unit": "Seconds",
+            "extra": "Analysis path: examples/data_source/analysis_stage1.py"
           }
         ]
       }
