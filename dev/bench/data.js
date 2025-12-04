@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1764859586051,
+  "lastUpdate": 1764859587130,
   "repoUrl": "https://github.com/kjvbrt/FCCAnalyses",
   "entries": {
     "Benchmark": [
@@ -6327,6 +6327,75 @@ window.BENCHMARK_DATA = {
             "range": "10",
             "unit": "Seconds",
             "extra": "Analysis path: examples/data_source/analysis_stage1.py"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "34742917+kjvbrt@users.noreply.github.com",
+            "name": "Juraj Smiesko",
+            "username": "kjvbrt"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "ac97bbb9a625d6cf04abba6654d6bf1bbf7dae11",
+          "message": "Fixing undefined max_trials (#489)",
+          "timestamp": "2025-12-04T15:34:25+01:00",
+          "tree_id": "0922834a7f4a2e4666f4cdda40f2972e82fccc5d",
+          "url": "https://github.com/kjvbrt/FCCAnalyses/commit/ac97bbb9a625d6cf04abba6654d6bf1bbf7dae11"
+        },
+        "date": 1764859586839,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "nightly | Events processed per second: case-studies/analysis_example/scripts/analysis_example.py",
+            "value": 10.112720451092049,
+            "unit": "Evt/s"
+          },
+          {
+            "name": "nightly | Events processed per second: examples/FCCee/higgs/mH-recoil/mumu/analysis_stage1.py",
+            "value": 9.582198671003793,
+            "unit": "Evt/s"
+          },
+          {
+            "name": "nightly | Events processed per second: examples/FCCee/higgs/mH-recoil/ee/analysis_stage1.py",
+            "value": 7.22403304653957,
+            "unit": "Evt/s"
+          },
+          {
+            "name": "nightly | Events processed per second: examples/FCCee/flavour/Bc2TauNu/analysis_B2TauNu_truth.py",
+            "value": 0.6555799931831813,
+            "unit": "Evt/s"
+          },
+          {
+            "name": "nightly | Events processed per second: examples/FCCee/test/jet_constituents.py",
+            "value": 10.365321955469762,
+            "unit": "Evt/s"
+          },
+          {
+            "name": "nightly | Events processed per second: examples/FCCee/vertex_lcfiplus/analysis_V0.py",
+            "value": 2.8007409125549465,
+            "unit": "Evt/s"
+          },
+          {
+            "name": "nightly | Events processed per second: examples/FCCee/weaver/stage1.py",
+            "value": 4.3274580671952085,
+            "unit": "Evt/s"
+          },
+          {
+            "name": "nightly | Events processed per second: examples/data_source/stages_source.py",
+            "value": 6.223608430274144,
+            "unit": "Evt/s"
+          },
+          {
+            "name": "nightly | Events processed per second: examples/data_source/analysis_stage1.py",
+            "value": 5.810580224872829,
+            "unit": "Evt/s"
           }
         ]
       }
