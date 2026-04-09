@@ -116,26 +116,26 @@ if(WITH_ONNX)
   endif()
 endif()
 
+#--- add CMake infrastructure -------------------------------------------------
+include(cmake/FCCAnalysesFunctions.cmake)
+
 if(WITH_ONNX AND BUILD_TESTING) # currently these files are only needed by ONNX-parts
 # Grab the test files into a cached directory
   if(NOT DEFINED CACHE{TEST_INPUT_DATA_DIR})
     message(STATUS "Getting test input files")
-    execute_process(COMMAND bash ${CMAKE_CURRENT_LIST_DIR}/tests/get_test_inputs.sh
-                    OUTPUT_VARIABLE test_input_data_dir
-                    RESULT_VARIABLE test_inputs_available)
-    if(NOT "${test_inputs_available}" STREQUAL "0")
-      message(WARNING "Failed to retrieve input test files. Some tests will need to be skipped.")
+    download_test_input("weaver-inference/preprocess.json")
+    if(NOT _download_failed)
+      download_test_input("weaver-inference/fccee_flavtagging_dummy.onnx")
+    endif()
+    if(_download_failed)
       unset(TEST_INPUT_DATA_DIR CACHE)
     else()
-      message(STATUS "Test input files stored in ${test_input_data_dir}")
-      set(TEST_INPUT_DATA_DIR ${test_input_data_dir} CACHE INTERNAL "directory for input test files")
+      message(STATUS "Test input files stored in ${TEST_INPUT_DATA_DIR}")
+      set(TEST_INPUT_DATA_DIR ${TEST_INPUT_DATA_DIR} CACHE INTERNAL "directory for input test files")
       mark_as_advanced(TEST_INPUT_DATA_DIR)
     endif()
   endif()
 endif()
-
-#--- add CMake infrastructure -------------------------------------------------
-include(cmake/FCCAnalysesFunctions.cmake)
 
 file(COPY bin/fccanalysis
   DESTINATION ${CMAKE_BINARY_DIR}

@@ -1,3 +1,26 @@
+# Download a single test input file into ${CMAKE_BINARY_DIR}/test_input_data,
+# preserving the relative path given as argument.
+# Sets TEST_INPUT_DATA_DIR in parent scope on success; sets _download_failed
+# in parent scope on failure.
+function(download_test_input _relpath)
+  set(_base_url "https://fccsw.web.cern.ch/fccsw/analysis/test-samples")
+  set(_dest "${CMAKE_BINARY_DIR}/test_input_data/${_relpath}")
+  get_filename_component(_dest_dir "${_dest}" DIRECTORY)
+  file(MAKE_DIRECTORY "${_dest_dir}")
+  file(DOWNLOAD
+    "${_base_url}/${_relpath}"
+    "${_dest}"
+    STATUS _status)
+  list(GET _status 0 _code)
+  if(NOT _code EQUAL 0)
+    list(GET _status 1 _error)
+    message(WARNING "Failed to download ${_relpath}: ${_error}. Some tests will need to be skipped.")
+    set(_download_failed TRUE PARENT_SCOPE)
+  else()
+    set(TEST_INPUT_DATA_DIR "${CMAKE_BINARY_DIR}/test_input_data" PARENT_SCOPE)
+  endif()
+endfunction()
+
 macro(find_catch_instance)
   if(USE_EXTERNAL_CATCH2)
     find_package(Catch2 REQUIRED)
