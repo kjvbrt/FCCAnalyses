@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1784565910977,
+  "lastUpdate": 1784565913462,
   "repoUrl": "https://github.com/kjvbrt/FCCAnalyses",
   "entries": {
     "Benchmark": [
@@ -829,6 +829,76 @@ window.BENCHMARK_DATA = {
             "value": 5.851833820343018,
             "range": "10",
             "unit": "Seconds",
+            "extra": "Analysis path: /Package/examples/data_source/analysis_stage1.py"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "34742917+kjvbrt@users.noreply.github.com",
+            "name": "Juraj Smiesko",
+            "username": "kjvbrt"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "a3713084c3da43e793309db16bd3d6589c8f4461",
+          "message": "Test against 2025-05-29 and 2026 stack releases (#529)\n\n* Test against all 2025/2026 stack releases plus latest and nightly\n\n* Drop 2025-01-28 from test matrix: podio 1.1 too old for datasource\n\n* Try ubuntu22 leg for 2026-04-08, 2026-02-01, 2025-05-29\n\n* Use ubuntu24 (not ubuntu22) for 2026-02-01/04-08; ubuntu22 unsupported since 2025-01-28",
+          "timestamp": "2026-07-20T18:34:05+02:00",
+          "tree_id": "c3d2d6a7e1bb1cff8454927afe371f564ee748a0",
+          "url": "https://github.com/kjvbrt/FCCAnalyses/commit/a3713084c3da43e793309db16bd3d6589c8f4461"
+        },
+        "date": 1784565912536,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "nightly | Events processed per second: /Package/examples/FCCee/higgs/mH-recoil/mumu/analysis_stage1.py",
+            "value": 25.152389102884584,
+            "range": "1000",
+            "unit": "Evt/s",
+            "extra": "Analysis path: /Package/examples/FCCee/higgs/mH-recoil/mumu/analysis_stage1.py"
+          },
+          {
+            "name": "nightly | Events processed per second: examples/FCCee/higgs/mH-recoil/ee/analysis_stage1.py",
+            "value": 11.886194058348254,
+            "unit": "Evt/s"
+          },
+          {
+            "name": "nightly | Events processed per second: examples/FCCee/flavour/Bc2TauNu/analysis_B2TauNu_truth.py",
+            "value": 9.761152780734342,
+            "unit": "Evt/s"
+          },
+          {
+            "name": "nightly | Events processed per second: examples/FCCee/test/jet_constituents.py",
+            "value": 12.88691034906125,
+            "unit": "Evt/s"
+          },
+          {
+            "name": "nightly | Events processed per second: examples/FCCee/vertex_lcfiplus/analysis_V0.py",
+            "value": 3.8437784290344172,
+            "unit": "Evt/s"
+          },
+          {
+            "name": "nightly | Events processed per second: examples/FCCee/weaver/stage1.py",
+            "value": 4.7315540271986425,
+            "unit": "Evt/s"
+          },
+          {
+            "name": "nightly | Events processed per second: /Package/examples/data_source/stages_source.py",
+            "value": 16.34764054853311,
+            "range": "1000",
+            "unit": "Evt/s",
+            "extra": "Analysis path: /Package/examples/data_source/stages_source.py"
+          },
+          {
+            "name": "nightly | Events processed per second: /Package/examples/data_source/analysis_stage1.py",
+            "value": 17.088660250802935,
+            "range": "1000",
+            "unit": "Evt/s",
             "extra": "Analysis path: /Package/examples/data_source/analysis_stage1.py"
           }
         ]
