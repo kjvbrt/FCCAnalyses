@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1785836921198,
+  "lastUpdate": 1785836923087,
   "repoUrl": "https://github.com/kjvbrt/FCCAnalyses",
   "entries": {
     "Benchmark": [
@@ -1279,6 +1279,76 @@ window.BENCHMARK_DATA = {
             "value": 5.60260796546936,
             "range": "10",
             "unit": "Seconds",
+            "extra": "Analysis path: /Package/examples/data_source/analysis_stage1.py"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "34742917+kjvbrt@users.noreply.github.com",
+            "name": "Juraj Smiesko",
+            "username": "kjvbrt"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "0a36def7ae9ed2fe455448002e4a9fd52f0492a4",
+          "message": "Fix setup.sh sourced-shell scoping bugs (#535)\n\nUnknown options used exit instead of return, killing the sourcing\nshell. Failed stack setups left FCCANA_LOCAL_DIR set, blocking\nretries. Wrap the body in a function with local vars to fix both.",
+          "timestamp": "2026-08-04T11:39:00+02:00",
+          "tree_id": "267c285d4ad4d5e3344609ca4508d1467e724bc9",
+          "url": "https://github.com/kjvbrt/FCCAnalyses/commit/0a36def7ae9ed2fe455448002e4a9fd52f0492a4"
+        },
+        "date": 1785836922424,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "prod | Events processed per second: /Package/examples/FCCee/higgs/mH-recoil/mumu/analysis_stage1.py",
+            "value": 26.918415835763614,
+            "range": "1000",
+            "unit": "Evt/s",
+            "extra": "Analysis path: /Package/examples/FCCee/higgs/mH-recoil/mumu/analysis_stage1.py"
+          },
+          {
+            "name": "prod | Events processed per second: examples/FCCee/higgs/mH-recoil/ee/analysis_stage1.py",
+            "value": 12.262128943633932,
+            "unit": "Evt/s"
+          },
+          {
+            "name": "prod | Events processed per second: examples/FCCee/flavour/Bc2TauNu/analysis_B2TauNu_truth.py",
+            "value": 9.416082864323744,
+            "unit": "Evt/s"
+          },
+          {
+            "name": "prod | Events processed per second: examples/FCCee/test/jet_constituents.py",
+            "value": 13.261072786030077,
+            "unit": "Evt/s"
+          },
+          {
+            "name": "prod | Events processed per second: examples/FCCee/vertex_lcfiplus/analysis_V0.py",
+            "value": 3.770986041467033,
+            "unit": "Evt/s"
+          },
+          {
+            "name": "prod | Events processed per second: examples/FCCee/weaver/stage1.py",
+            "value": 4.947360782582249,
+            "unit": "Evt/s"
+          },
+          {
+            "name": "prod | Events processed per second: /Package/examples/data_source/stages_source.py",
+            "value": 17.65812400703933,
+            "range": "1000",
+            "unit": "Evt/s",
+            "extra": "Analysis path: /Package/examples/data_source/stages_source.py"
+          },
+          {
+            "name": "prod | Events processed per second: /Package/examples/data_source/analysis_stage1.py",
+            "value": 17.8488305118494,
+            "range": "1000",
+            "unit": "Evt/s",
             "extra": "Analysis path: /Package/examples/data_source/analysis_stage1.py"
           }
         ]
