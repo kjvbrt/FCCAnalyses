@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1785832769058,
+  "lastUpdate": 1785832943667,
   "repoUrl": "https://github.com/kjvbrt/FCCAnalyses",
   "entries": {
     "Benchmark": [
@@ -1049,6 +1049,86 @@ window.BENCHMARK_DATA = {
             "value": 19.054576274020018,
             "range": "1000",
             "unit": "Evt/s",
+            "extra": "Analysis path: /Package/examples/data_source/analysis_stage1.py"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "56884503+ShreyasBakare@users.noreply.github.com",
+            "name": "Shreyas Bakare",
+            "username": "ShreyasBakare"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "b84d1d256484bb4bae813a40275da982b3c322fe",
+          "message": "Fix: Update eventsProcessed lookup for ROOT 6.38 and add fallback warning (#512)\n\n* Fix eventsProcessed XRootD lookup and add fallback warning\n\n- Replaced PyROOT dynamic lookup with explicit .Get() to fix AttributeError on ROOT 6.38.\n\n- Removed GetListOfKeys() loop by fetching the parameter directly.\n\n- Added LOGGER.warning to alert users if cross-section scaling falls back to the current tree's entry count.\n\n* Update log level for missing eventsProcessed\n\nChange log level from warning to debug for missing eventsProcessed.\n\n---------\n\nCo-authored-by: Shreyas Bakare <sbakare@lxplus993.cern.ch>",
+          "timestamp": "2026-08-04T10:17:15+02:00",
+          "tree_id": "6807a4b9cdf93129282bd1e20ec54877c9e1fc9d",
+          "url": "https://github.com/kjvbrt/FCCAnalyses/commit/b84d1d256484bb4bae813a40275da982b3c322fe"
+        },
+        "date": 1785832942627,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "nightly | Time spent running the analysis: /Package/examples/FCCee/higgs/mH-recoil/mumu/analysis_stage1.py",
+            "value": 4.348238706588745,
+            "range": "10",
+            "unit": "Seconds",
+            "extra": "Analysis path: /Package/examples/FCCee/higgs/mH-recoil/mumu/analysis_stage1.py"
+          },
+          {
+            "name": "nightly | Time spent running the analysis: examples/FCCee/higgs/mH-recoil/ee/analysis_stage1.py",
+            "value": 9.699635982513428,
+            "range": "10",
+            "unit": "Seconds",
+            "extra": "Analysis path: examples/FCCee/higgs/mH-recoil/ee/analysis_stage1.py"
+          },
+          {
+            "name": "nightly | Time spent running the analysis: examples/FCCee/flavour/Bc2TauNu/analysis_B2TauNu_truth.py",
+            "value": 13.44821572303772,
+            "range": "10",
+            "unit": "Seconds",
+            "extra": "Analysis path: examples/FCCee/flavour/Bc2TauNu/analysis_B2TauNu_truth.py"
+          },
+          {
+            "name": "nightly | Time spent running the analysis: examples/FCCee/test/jet_constituents.py",
+            "value": 8.674898624420166,
+            "range": "10",
+            "unit": "Seconds",
+            "extra": "Analysis path: examples/FCCee/test/jet_constituents.py"
+          },
+          {
+            "name": "nightly | Time spent running the analysis: examples/FCCee/vertex_lcfiplus/analysis_V0.py",
+            "value": 28.295718669891357,
+            "range": "10",
+            "unit": "Seconds",
+            "extra": "Analysis path: examples/FCCee/vertex_lcfiplus/analysis_V0.py"
+          },
+          {
+            "name": "nightly | Time spent running the analysis: examples/FCCee/weaver/stage1.py",
+            "value": 25.399919986724854,
+            "range": "10",
+            "unit": "Seconds",
+            "extra": "Analysis path: examples/FCCee/weaver/stage1.py"
+          },
+          {
+            "name": "nightly | Time spent running the analysis: /Package/examples/data_source/stages_source.py",
+            "value": 6.893368244171143,
+            "range": "10",
+            "unit": "Seconds",
+            "extra": "Analysis path: /Package/examples/data_source/stages_source.py"
+          },
+          {
+            "name": "nightly | Time spent running the analysis: /Package/examples/data_source/analysis_stage1.py",
+            "value": 6.847393989562988,
+            "range": "10",
+            "unit": "Seconds",
             "extra": "Analysis path: /Package/examples/data_source/analysis_stage1.py"
           }
         ]
