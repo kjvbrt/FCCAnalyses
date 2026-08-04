@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1785832943667,
+  "lastUpdate": 1785832945648,
   "repoUrl": "https://github.com/kjvbrt/FCCAnalyses",
   "entries": {
     "Benchmark": [
@@ -1129,6 +1129,76 @@ window.BENCHMARK_DATA = {
             "value": 6.847393989562988,
             "range": "10",
             "unit": "Seconds",
+            "extra": "Analysis path: /Package/examples/data_source/analysis_stage1.py"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "56884503+ShreyasBakare@users.noreply.github.com",
+            "name": "Shreyas Bakare",
+            "username": "ShreyasBakare"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "b84d1d256484bb4bae813a40275da982b3c322fe",
+          "message": "Fix: Update eventsProcessed lookup for ROOT 6.38 and add fallback warning (#512)\n\n* Fix eventsProcessed XRootD lookup and add fallback warning\n\n- Replaced PyROOT dynamic lookup with explicit .Get() to fix AttributeError on ROOT 6.38.\n\n- Removed GetListOfKeys() loop by fetching the parameter directly.\n\n- Added LOGGER.warning to alert users if cross-section scaling falls back to the current tree's entry count.\n\n* Update log level for missing eventsProcessed\n\nChange log level from warning to debug for missing eventsProcessed.\n\n---------\n\nCo-authored-by: Shreyas Bakare <sbakare@lxplus993.cern.ch>",
+          "timestamp": "2026-08-04T10:17:15+02:00",
+          "tree_id": "6807a4b9cdf93129282bd1e20ec54877c9e1fc9d",
+          "url": "https://github.com/kjvbrt/FCCAnalyses/commit/b84d1d256484bb4bae813a40275da982b3c322fe"
+        },
+        "date": 1785832945183,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "nightly | Events processed per second: /Package/examples/FCCee/higgs/mH-recoil/mumu/analysis_stage1.py",
+            "value": 22.997817449275093,
+            "range": "1000",
+            "unit": "Evt/s",
+            "extra": "Analysis path: /Package/examples/FCCee/higgs/mH-recoil/mumu/analysis_stage1.py"
+          },
+          {
+            "name": "nightly | Events processed per second: examples/FCCee/higgs/mH-recoil/ee/analysis_stage1.py",
+            "value": 10.309665247260899,
+            "unit": "Evt/s"
+          },
+          {
+            "name": "nightly | Events processed per second: examples/FCCee/flavour/Bc2TauNu/analysis_B2TauNu_truth.py",
+            "value": 7.435930688462493,
+            "unit": "Evt/s"
+          },
+          {
+            "name": "nightly | Events processed per second: examples/FCCee/test/jet_constituents.py",
+            "value": 11.527512231497004,
+            "unit": "Evt/s"
+          },
+          {
+            "name": "nightly | Events processed per second: examples/FCCee/vertex_lcfiplus/analysis_V0.py",
+            "value": 3.5341035570305928,
+            "unit": "Evt/s"
+          },
+          {
+            "name": "nightly | Events processed per second: examples/FCCee/weaver/stage1.py",
+            "value": 3.937020276137268,
+            "unit": "Evt/s"
+          },
+          {
+            "name": "nightly | Events processed per second: /Package/examples/data_source/stages_source.py",
+            "value": 14.506696357699658,
+            "range": "1000",
+            "unit": "Evt/s",
+            "extra": "Analysis path: /Package/examples/data_source/stages_source.py"
+          },
+          {
+            "name": "nightly | Events processed per second: /Package/examples/data_source/analysis_stage1.py",
+            "value": 14.60409612071733,
+            "range": "1000",
+            "unit": "Evt/s",
             "extra": "Analysis path: /Package/examples/data_source/analysis_stage1.py"
           }
         ]
