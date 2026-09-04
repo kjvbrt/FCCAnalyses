@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1788527517192,
+  "lastUpdate": 1788527521224,
   "repoUrl": "https://github.com/kjvbrt/FCCAnalyses",
   "entries": {
     "Benchmark": [
@@ -2029,6 +2029,76 @@ window.BENCHMARK_DATA = {
             "value": 6.555689096450806,
             "range": "10",
             "unit": "Seconds",
+            "extra": "Analysis path: /Package/examples/data_source/analysis_stage1.py"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "34742917+kjvbrt@users.noreply.github.com",
+            "name": "Juraj Smiesko",
+            "username": "kjvbrt"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "d84d7a18fd56027a120c7b362f62abe39f0d6745",
+          "message": "Fix legacy vertexing: drop ill-conditioned tracks and skip unneeded momenta-at-vertex computation (#537)\n\nCherry-picked from pre-edm4hep1 (#525, merged as c30d1d57f). See that\nPR for details: drops tracks with non-positive-definite covariance\nbefore they reach Delphes' VertexFit (which otherwise silently\nreturns NaN), and adds a ComputeMomentaAtVertex flag to skip the\nO(ntracks^3) VertexMore computation when callers don't need it.\n\nFixes #378",
+          "timestamp": "2026-09-04T15:00:37+02:00",
+          "tree_id": "bd87a36e4d425632e4b6ef3a12cccbf23f449059",
+          "url": "https://github.com/kjvbrt/FCCAnalyses/commit/d84d7a18fd56027a120c7b362f62abe39f0d6745"
+        },
+        "date": 1788527520028,
+        "tool": "customBiggerIsBetter",
+        "benches": [
+          {
+            "name": "prod | Events processed per second: /Package/examples/FCCee/higgs/mH-recoil/mumu/analysis_stage1.py",
+            "value": 24.42470422278002,
+            "range": "1000",
+            "unit": "Evt/s",
+            "extra": "Analysis path: /Package/examples/FCCee/higgs/mH-recoil/mumu/analysis_stage1.py"
+          },
+          {
+            "name": "prod | Events processed per second: examples/FCCee/higgs/mH-recoil/ee/analysis_stage1.py",
+            "value": 11.542711997817996,
+            "unit": "Evt/s"
+          },
+          {
+            "name": "prod | Events processed per second: examples/FCCee/flavour/Bc2TauNu/analysis_B2TauNu_truth.py",
+            "value": 8.993609167961896,
+            "unit": "Evt/s"
+          },
+          {
+            "name": "prod | Events processed per second: examples/FCCee/test/jet_constituents.py",
+            "value": 12.200473043853828,
+            "unit": "Evt/s"
+          },
+          {
+            "name": "prod | Events processed per second: examples/FCCee/vertex_lcfiplus/analysis_V0.py",
+            "value": 3.5485093318142913,
+            "unit": "Evt/s"
+          },
+          {
+            "name": "prod | Events processed per second: examples/FCCee/weaver/stage1.py",
+            "value": 4.418820188461137,
+            "unit": "Evt/s"
+          },
+          {
+            "name": "prod | Events processed per second: /Package/examples/data_source/stages_source.py",
+            "value": 16.241808046121225,
+            "range": "1000",
+            "unit": "Evt/s",
+            "extra": "Analysis path: /Package/examples/data_source/stages_source.py"
+          },
+          {
+            "name": "prod | Events processed per second: /Package/examples/data_source/analysis_stage1.py",
+            "value": 15.253926555812287,
+            "range": "1000",
+            "unit": "Evt/s",
             "extra": "Analysis path: /Package/examples/data_source/analysis_stage1.py"
           }
         ]
